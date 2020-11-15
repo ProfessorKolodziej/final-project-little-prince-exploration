@@ -1,0 +1,17 @@
+/* CSS files add styling rules to your content */
+
+.home-title {
+  font-family: Milk Script, sans-serif;
+  color: #ffffff;
+  background-color: #2C3F59;
+  
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}

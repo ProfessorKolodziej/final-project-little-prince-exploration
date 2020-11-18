@@ -8,8 +8,8 @@
 <body>
   <header>
     <img class="logo" src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2Flogo.png?v=1605558587857">
-    <nav>
-        <a class="project" href="project.html"> Project </a>
+    <nav class= "Project">
+      <a href="project.html"> <button> Project </button> </a>
     </nav>
   </header>   
     <h1 class="home-title">Little Prince Space Travel</h1>
@@ -22,14 +22,11 @@
     <p class="introduction-2"> 
       Start now and join the Little prince on his space journey!
     </p>
-
-    <div id="opentnContainer" style="opacity: 1; transition: all 0.5 ease 0s;">
-      <button id="openbtn" onclick="openRightMenu()" style="opacity: 1; transition: all 0.5 ease 0s;"> &lt; </button>
-    </div>
-    <aside id="overviewnav" style="opacity: 1; transition: all 0.5 ease 0s,right= -100vw;">
-      <button id="closeBtn" onclick="clostRightMenu()"> &gt;</button>
-      <div class="overviewcontainer">
-        <h3 class="overview-title">
+ 
+<p href="javascript:void(0)" class="openbtn" onclick="openNav()">	&#8688; </p>
+<div id="mySidenav" class="sidenav"> 
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+  <h3 class="overview-title">
           Earth </h3>
         <p class="overview-planets">
           Our first destination is your planet! Everything one ever knows is here. This is the only place where life is known to currently exist.
@@ -48,18 +45,18 @@
           Saturn </h3>
          <p class="overview-planets">
           Next we will land on Saturn’s rings! Saturn is the second largest planet and is known for its rings, although the other gas giants also have these kinds of rings, only Saturn’s rings can be seen the clearest.
-         </p>
-      </div>
-    </aside>
+         </p>       
+</div>
+
       <h2>The Solar System</h2>
       <img class="solar-system-map" src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2FGroup%2026.png?v=1604540977437">
-      <h2>Earth</h2>
+      <h2 class="planettitle"> Earth </h2>
       <p class="Description">
       You just landed on Earth where humans like you live!
       </p>
-      <img class="earth" src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2Fearth%20full.png?v=1604540972263" >
+      <img class="planetpicture" src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2Fearth%20full.png?v=1604540972263" >
       <p class="button-scroll-right"> 
-      Scroll Right</p>
+      Scroll Right &gt;</p>
         <section class="information-Earth">
         <ul class="information-list">
           <li>Equatorial Diameter: 12,756 km</li>
@@ -72,12 +69,12 @@
       Unfortunately Rose is not on the Earth, but don’t give up your search!
       </p>
       </section>
-    <h2>Mars</h2>
+    <h2 class="planettitle"> Mars</h2>
     <p class="Description"> 
       You just landed on planet Mars!</p>
-    <img src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2Fmars%20full.png?v=1604541003573" alt="mars">
+    <img class="planetpicture" src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2Fmars%20full.png?v=1604541003573">
     <p class="button-scroll-right"> 
-      Scroll Right
+      Scroll Right &gt;
     </p>
       <section class="information-Mars">
         <ul class="information-list">
@@ -91,12 +88,12 @@
       </p>
       Unfortunately Rose is not on Mars, but don’t give up your search!
       </section>
-    <h2>Jupiter</h2>
+    <h2 class="planettitle">Jupiter</h2>
     <p class="Description"> 
       You just landed on planet Jupiter!</p>
-    <img src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2Fjupiter%20full.png?v=1604540986304" alt="jupiter">
+    <img class="planetpicture" src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2Fjupiter%20full.png?v=1604540986304" >
      <p class="button-scroll-right"> 
-       Scroll Right</p>
+       Scroll Right &gt;</p>
        <section class="information-Jupiter">
         <ul class="information-list">
         <li>Equatorial Diameter: 142,984 km</li>
@@ -109,12 +106,12 @@
       Unfortunately Rose is not on Jupiter, but don’t give up your search!
       </p>
       </section>
-    <h2>Saturn</h2>
+    <h2 class="planettitle">Saturn</h2>
     <p class="Description"> 
       You just landed on planet Saturn!</p>
-    <img src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2FSaturn%20full.png?v=1604541012194" alt="Saturn">
+    <img class="planetpicture" src="https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2FSaturn%20full.png?v=1604541012194" >
     <p class="button-scroll-right">
-      Scroll Right</p>
+      Scroll Right &gt;</p>
       <section class="information-Saturn">
         <ul class="information-list">
         <li>Equatorial Diameter: 120,536 km</li>
@@ -127,7 +124,7 @@
       Unfortunately Rose is not on Saturn, but don’t give up your search!
       </p>
       </section>
-    <nav>
+    <nav class="buttonquiz">
         <a href="quiz.html"> <button> Quiz </button> </a>
     </nav>
   <button onclick="topFunction()" id="myBtn" title="Go to top"> &#8593 </button>

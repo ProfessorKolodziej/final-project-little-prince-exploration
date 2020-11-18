@@ -251,3 +251,19 @@ label {
   font-size: 13px;
   padding: 5%;
 }
+
+
+.btn {
+  margin: auto;
+  display: block;
+  width: 25%;
+  font-size: 200%;
+  padding: auto;
+  border-radius: 2rem;
+  background: #4CAF50;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

@@ -4,25 +4,27 @@ body {
   size: auto;
 }
 
+.solar-system2 {
+    visibility: hidden;
+  }
+
 .logo {
   top: 0;
   left: 0;
-  width: 20%; 
+  width: 22%;
 }
 
-
-.Project {
-  font-family: Adelle Condensed, sans-serif;
+.project {
+  font-family: Adelle condensed, sans-serif;
   position: absolute;
   font-size: 12px;
   color: white;
-  top: 6%;
+  top: 10%;
   right: 6%;
 }
 
-
 .home-title {
-  font-family: Milk Script;
+  font-family: "Milk Script";
   color: white;
   font-size: 30px;
   margin-left: 15%;
@@ -32,43 +34,42 @@ body {
 }
 
 .introduction {
-  font-family: Delve Hand;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   color: white;
   font-size: 14px;
   padding: 20%;
-  padding-top: 0;
+  padding-top: 5%;
   padding-bottom: 0;
   position: relative;
 }
 
 .introduction-2 {
-  font-family: Delve Hand;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   color: white;
   font-size: 14px;
   padding: 20%;
-  padding-top: 0;
+  padding-top: 5%;
   padding-bottom: 0;
   position: relative;
 }
 
-
 .universe-background {
   position: absolute;
   width: auto;
-  top: -10%;
+  top: -3%;
   z-index: 0;
-  left: -55%;
+  left: -32%;
 }
 
 .little-prince {
   width: 60%;
   z-index: 1;
   position: absolute;
-  padding-top: 30%;
+  padding-top: 35%;
   padding-left: 35%;
 }
-
-
 
 .sidenav {
   height: 100%;
@@ -91,21 +92,34 @@ body {
 }
 
 .overview-title {
-  font-family: GoodDog New;
-  color: white;
-  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #ffe99f;
+  font-size: 20px;
   padding-right: 10%;
-  padding-left: 10%;
+  padding-left: 5%;
+  position: relative;
+}
+
+.number {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #FFE99F;
+  font-size: 40px;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 0%;
 }
 
 .overview-planets {
-  font-family: Adelle PE;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   color: white;
   font-size: 9px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 30%;
+  margin-bottom: 10%;
+  padding-left: 5%;
 }
-
 
 .sidenav .closebtn {
   position: absolute;
@@ -117,153 +131,581 @@ body {
 }
 
 .openbtn {
-font-size:30px;
-cursor:pointer;
-color: white;
-margin-top: 91%;
-position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #9591f2;
+  opacity: 85%;
+  border-radius: 5px;
+  color: white;
+  margin-top: 76%;
+  position: absolute;
 }
 
-
+.openbtn:hover {
+  opacity: 100%;
+}
 
 h2 {
-  font-family: GoodDog New;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   color: white;
   font-size: 30px;
-  margin-left: 30%;
-  margin-top: 100%;
+  text-align: center;
+  margin-top: 80%;
 }
 
-.solar-system{
-  width: 100%;
+.solar-system {
+  width: 120%;
+  padding-top: 10%;
 }
 
 .planettitle {
-  margin-left: 40%;
-  margin-top: 20%;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.earth {
+  margin-top: 15%;
 }
 
 .Description {
-  font-family: GoodDog New;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-weight: 700;
   color: white;
   font-size: 12px;
-  margin-left: 30%;
 }
 
+.planetearthpic {
+  width: 100%;
+  margin-top: -20%;
+}
 
 .planetpicture {
-  width: 60%;
-  margin-left: 16%;
+  width: 70%;
+  padding-left: 18%;
+  padding-top: 15%;
 }
 
-.button-scroll-right{
-  font-family: GoodDog New;
+.button-scroll-right-earth {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   color: #BEBEBE;
   font-size: 12px;
   margin-left: 40%;
-  margin-top: 20%;
+  margin-top: -15%;
+  margin-bottom: -70%;
+  padding-bottom: 0;
 }
 
-.information-list {
-  border-style: dotted;
-  padding: 15%;
-  margin: 10%;
-}
-
-.information-Earth {
-  font-family: Adelle PE;
-  color: white;
-  font-size: 12px
-}
-
-.information-Mars {
-  font-family: Adelle PE;
-  color: white;
-  font-size: 12px
-}
-
-.information-Jupiter {
-  font-family: Adelle PE;
-  color: white;
-  font-size: 12px
-}
-
-.information-Saturn {
-  font-family: Adelle PE;
-  color: white;
-  font-size: 12px
-}
-
-.buttonquiz {
-  margin-top: 20%;
+.button-scroll-right {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #BEBEBE;
+  font-size: 12px;
   margin-left: 40%;
-  margin-bottom: 15%;  
+  margin-top: 10%;
+  margin-bottom: -70%;
+  padding-bottom: 0;
 }
 
 #myBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 20px; 
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #FFE99F; 
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #FFE99F;
   opacity: 60%;
-  color: white; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10px; 
-  font-size: 18px; 
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
 #myBtn:hover {
   opacity: 100%;
 }
 
-
+.quizpage {
+  background-color: #2C3F59;
+}
 
 .quiz-title {
-  font-family: GoodDog New;
-  color: #FFE99F;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #ffefb4;
   font-size: 30px;
-  margin-top: 10%;
+  margin-top: 1%;
   margin-left: 5%;
 }
 
-.Description-quiz{
-  font-family: GoodDog New;
+.Description-quiz {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-weight: 700;
   color: white;
-  font-size: 12px;
-    padding: 5%;
-}
-
-.questions {
-  font-family: Adelle PE;
-  color: white;
-  font-size: 13px;
+  font-size: 15px;
   padding: 5%;
+  margin-top: -7%;
 }
 
-label {
-  font-family: Adelle PE;
+.question {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #ffefb4;
+  font-size: 15px;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.answers {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
   color: white;
-  font-size: 13px;
-  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 15px;
+  margin-left: 5%;
 }
 
-
-.btn {
-  margin: auto;
-  display: block;
-  width: 25%;
-  font-size: 200%;
-  padding: auto;
-  border-radius: 2rem;
-  background: #4CAF50;
-  border: none;
-}
-
-.btn:hover {
+#button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 85%;
+  background-color: #9591F2;
+  color: #fff;
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px;
   cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 15%;
+  margin-left: 5%;
 }
+
+#button:hover {
+  opacity: 100%;
+}
+
+#results {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFE99F;
+  margin-top: -12%;
+  margin-left: 35%;
+  font-size: 20px;
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+}
+
+a:hover {
+  color: #9394eb;
+}
+
+#continue {
+  display: block;
+  margin-left: 80%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#thefox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 19%;
+  margin-top: 50%;
+  max-width: 60%;
+}
+
+.foxpage {
+  background-image: url("https://cdn.glitch.com/2d266749-7995-4116-89e7-b22714ac7a5b%2FAsset%204%404x.png?v=1606965980240");
+  background-color: #f6bd00;
+  background-repeat: no-repeat;
+  background-size: cover;
+  size: auto;
+}
+
+.foxpagetext {
+  font-family: "Nerko One", cursive;
+  font-size: 40px;
+  display: block;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px orange;
+}
+
+.unlock {
+  font-size: 30px;
+  position: relative;
+  margin-top: -10%;
+}
+
+/* the scroll to right function */
+.Mobilepage {
+  background: #2C3F59;
+  size: auto;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+}
+
+.horizontal-scroll-wrapper {
+  position:relative;
+  display:block;
+  top: 0;
+  width:300px;
+  max-height:450px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(20%) translateX(30%);
+  margin-top:40px;
+}
+
+.rectangles {
+  margin-top:85%;
+  margin-bottom:-30%;
+  padding: 0px 50px 10px;
+}
+
+.rectangles > div {
+  width: 400px;
+  height: 220px;
+  margin: 110%;
+  margin-top: 60%;
+  border-style: solid;
+  border-color: #ffffff;
+  transform: rotate(90deg) translateY(135%);
+}
+
+.information-list {
+  border-style: dotted;
+  padding: 10%;
+}
+
+.information {
+  display: block;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 13px;
+  margin: 10%;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 15%;
+  }
+
+  .home-title {
+    font-size: 50px;
+    margin-right: 50%;
+    margin-top: 0;
+    margin-left: 13%;
+    padding: 1%;
+    padding-top: -10%;
+    padding-bottom: 5%;
+  }
+
+  .universe-background {
+    transform: rotate(180deg);
+    position: absolute;
+    width: auto;
+    top: -15%;
+    z-index: 0;
+    left: -10%;
+    margin-bottom: 0;
+  }
+
+  .little-prince {
+    width: 65%;
+    margin-top: -65%;
+    z-index: 1;
+    position: absolute;
+    right: -5%;
+    margin-bottom: 0;
+  }
+
+  .introduction {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 33%;
+    padding-top: 3%;
+    padding-bottom: 0;
+    position: relative;
+    left: -20%;
+  }
+
+  .introduction-2 {
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 0;
+    position: relative;
+    left: -20%;
+    padding-top: 0;
+    padding-left: 33%;
+    padding-right: 33%;
+  }
+
+  .solar-system-title {
+    margin-top: 40%;
+    font-size: 50px;
+  }
+  
+  .solar-system2 {
+  visibility: visible;
+  width: 160%;
+  margin-left: -53%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .number {
+    visibility: hidden;
+  }
+  
+  .earth1 {
+    left: 27%;
+    top: 30%;
+  }
+  
+  .earth2 {
+    margin-top: 30%;
+    margin-left: 27%;
+    padding-right: 30%;
+  }
+
+  .mars1 {
+    left: 40%;
+    top: -5%;
+  }
+  
+  .mars2 {
+    margin-left: 40%;
+    margin-top: -6%;
+    padding-right: 16%;
+  }
+  
+  .jupiter1 {
+    left: 50%;
+    top: -5%;
+  }
+  
+  .jupiter2 {
+    margin-left: 50%;
+    margin-top: -5%;
+    padding-right: 7%;
+  }
+  
+  .saturn1 {
+    left: 60%;
+    top: -5%;
+  }
+  
+  .saturn2 {
+    margin-left: 60%;
+    margin-top: -5%;
+    padding-right: 2%;
+  }
+  
+  .openbtn {
+    display: none;
+  }
+
+  .sidenav .closebtn {
+    display: none;
+  }
+
+  .solar-system {
+    display: none;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    top: 135%;
+    left: 10%;
+    background-color: transparent;
+    overflow-x: visible;
+    transition: none;
+    padding-top: 20px;
+    padding-right: 0;
+  }
+
+  .earth {
+    margin-top: 0;
+  }
+  
+  .planetpicture {
+    margin-left: -15%;
+    width: 40%;
+  }
+  
+  .button-scroll-right {
+    visibility: hidden;
+  }
+  
+  .button-scroll-right-earth {
+    visibility: hidden;
+  }
+  
+  #continue {
+    margin-top: 3%;
+  }
+  
+  .unlock {
+    margin-top: -5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .home-title {
+    font-size: 70px;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-right: 14%;
+  }
+
+  .universe-background {
+    width: 100%;
+    top: -20%;
+    left: -5%;
+  }
+
+  .little-prince {
+    width: 55%;
+    margin-top: -65%;
+    left: -8%;
+  }
+
+  .introduction {
+    font-size: 20px;
+    padding-top: 0%;
+    left: 30%;
+    margin-top: -35%;
+  }
+
+  .introduction-2 {
+    font-size: 20px;
+    left: 30%;
+    padding-left: 33%;
+  }
+
+  .solar-system-title {
+    margin-top: 70%;
+    font-size: 50px;
+  }
+  
+  .solar-system2 {
+  margin-left: -45%;
+  }
+  
+  .earth1 {
+    left: 35%;
+    top: 140%;
+    font-size: 30px;
+  }
+  
+  .earth2 {
+    margin-top: 75%;
+    margin-left: 35%;
+    padding-right: 20%;
+    font-size: 15px;
+  }
+
+  .mars1 {
+    left: 42%;
+    font-size: 30px;
+  }
+  
+  .mars2 {
+    margin-left: 42%;
+    margin-top: -4%;
+    padding-right: 10%;
+    font-size: 15px;
+  }
+  
+  .jupiter1 {
+    left: 58%;
+    top: -5%;
+    font-size: 30px;
+  }
+  
+  .jupiter2 {
+    margin-left: 58%;
+    margin-top: -3%;
+    padding-right: 7%;
+    font-size: 15px;
+  }
+  
+  .saturn1 {
+    left: 68%;
+    top: -5%;
+    font-size: 30px;
+  }
+  
+  .saturn2 {
+    margin-left: 68%;
+    margin-top: -3%;
+    padding-right: 2%;
+    font-size: 15px;
+  }
+
+  .quiz-title {
+    font-size: 50px;
+    margin-left: -5%;
+  }
+
+  .Description-quiz {
+    font-size: 20px;
+    padding-top: 10%;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  
+  .question {
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.answers {
+  margin-top: 3%;
+  font-size: 20px;
+}
+  
+  .foxpagetext{
+    font-size: 60px;
+  }

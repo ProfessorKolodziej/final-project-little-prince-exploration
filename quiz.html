@@ -1,10 +1,18 @@
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Nerko+One&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
     <title>Quiz</title>
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
   </head>
-  <body>
+  <body class="quizpage">
     <header>
       <img
         class="logo"
@@ -20,65 +28,17 @@
     </h2>
     <p class="Description-quiz">
       You just explored four planets but Rose wasn’t on either of them. To guide
-      you through your journey Fox is willing to help you. Answer to these
+      you through your journey Fox is willing to help you. Answer these
       questions to unlock him.
     </p>
-
-    <form action="/action_page.php">
-      <p class="questions">1-How many moons does Mars have?</p>
-      <input type="radio" id="2" name="number" value="2" />
-      <label for="2">2</label><br />
-      <input type="radio" id="1" name="number" value="1" />
-      <label for="1">1</label><br />
-      <input type="radio" id="50" name="number" value="50" />
-      <label for="50">50</label><br />
-      <input type="radio" id="13" name="number" value="13" />
-      <label for="13">13</label><br />
-
-      <p class="questions">
-        2- What percentage of the earth surface is covered with water?
-      </p>
-      <input type="radio" id="percent1" name="percent" value="50%" />
-      <label for="percent1">50%</label><br />
-      <input type="radio" id="percent2" name="percent" value="60%" />
-      <label for="percent2">60%</label><br />
-      <input type="radio" id="percent3" name="percent" value="70%" />
-      <label for="percent3">70%</label><br />
-      <input type="radio" id="percent4" name="percent" value="80%" />
-      <label for="percent4">80%</label><br />
-
-      <p class="questions">
-        3- What is the largest planet in the solar system?
-      </p>
-      <input type="radio" id="planet1" name="planet" value="Mars" />
-      <label for="planet1">Mars</label><br />
-      <input type="radio" id="planet2" name="planet" value="Venus" />
-      <label for="planet2">Venus</label><br />
-      <input type="radio" id="planet3" name="planet" value="Jupiter" />
-      <label for="planet3">Jupiter</label><br />
-      <input type="radio" id="planet4" name="planet" value="Saturn" />
-      <label for="planet4">Saturn</label><br />
-
-      <p class="questions">4- What is the closest planet to sun?</p>
-      <input type="radio" id="planet5" name="planet" value="Mars" />
-      <label for="planet5">Mars</label><br />
-      <input type="radio" id="planet6" name="planet" value="Venus" />
-      <label for="planet6">Venus</label><br />
-      <input type="radio" id="planet7" name="planet" value="Earth" />
-      <label for="planet7">Earth</label><br />
-      <input type="radio" id="planet8" name="planet" value="Mercury" />
-      <label for="planet8">Mercury</label><br />
-
-      <p class="questions">5- Which planet has the clearest ring around it?</p>
-      <input type="radio" id="planet9" name="planet" value="Neptune" />
-      <label for="planet9">Neptune</label><br />
-      <input type="radio" id="planet10" name="planet" value="Uranus" />
-      <label for="planet10">Uranus</label><br />
-      <input type="radio" id="planet11" name="planet" value="Jupiter" />
-      <label for="planet11">Jupiter</label><br />
-      <input type="radio" id="planet12" name="planet" value="Saturn" />
-      <label for="planet12">Saturn</label><br />
-      <input type="submit" value="Done" />
-    </form>
+    <!--hold the quiz-->
+    <div id="quiz"></div>
+    <!--submit the quiz-->
+    <button id="button">Submit Quiz</button>
+    <!--display the results-->
+    <div id="results"></div>
+    <!--continue to next page-->
+    <a id="continue" href="UnlockTheFox.html">Continue</a>
+    <p id="tryagain"></p>
   </body>
 </html>

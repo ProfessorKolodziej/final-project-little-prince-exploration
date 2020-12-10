@@ -1,12 +1,21 @@
 /* CSS files add styling rules to your content */
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
 body {
   background: #2C3F59;
   size: auto;
 }
 
-.solar-system2 {
-    visibility: hidden;
+@media screen and (max-width: 700px) {
+  
+.solarsystem2 {
+    display:none;
   }
+}
+  
 
 .logo {
   top: 0;
@@ -14,27 +23,22 @@ body {
   width: 22%;
 }
 
-.project {
-  font-family: Adelle condensed, sans-serif;
-  position: absolute;
-  font-size: 12px;
-  color: white;
-  top: 10%;
-  right: 6%;
-}
 
 .home-title {
-  font-family: "Milk Script";
-  color: white;
-  font-size: 30px;
-  margin-left: 15%;
+  font-family: "Nerko One", cursive;
+  text-align: center;
+  font-size: 40px;
   padding: 20%;
   padding-top: 0;
   padding-bottom: 5%;
+  z-index:1;
+  color: #ffefb4;
+  
 }
 
 .introduction {
   font-family: "Quicksand", sans-serif;
+  text-align:left;
   font-weight: 700;
   color: white;
   font-size: 14px;
@@ -46,6 +50,7 @@ body {
 
 .introduction-2 {
   font-family: "Quicksand", sans-serif;
+  text-align:left;
   font-weight: 700;
   color: white;
   font-size: 14px;
@@ -58,9 +63,10 @@ body {
 .universe-background {
   position: absolute;
   width: auto;
-  top: -3%;
-  z-index: 0;
-  left: -32%;
+  top: 50%;
+  z-index: -1;
+  left: -30%;
+  size:10%;
 }
 
 .little-prince {
@@ -151,24 +157,33 @@ h2 {
   color: white;
   font-size: 30px;
   text-align: center;
-  margin-top: 80%;
 }
 
 .solar-system {
   width: 120%;
-  padding-top: 10%;
+  margin-top: 100%;
+  margin-left:-10%;
 }
+
+  .solar-system-title {
+    font-family: "Nerko One", cursive;
+    font-size: 35px;
+    margin-bottom: 150%;
+    color: #ffefb4;
+    margin-top: -130%;
+  }
 
 .planettitle {
   display: block;
   text-align: center;
-  margin-top: 0;
+  margin-top: -10%;
   padding-top: 0;
 }
 
-.earth {
-  margin-top: 15%;
-}
+.planettitle-earth{
+    margin-top:-20%;
+  }
+
 
 .Description {
   font-family: "Quicksand", sans-serif;
@@ -179,10 +194,12 @@ h2 {
   font-size: 12px;
 }
 
-.planetearthpic {
-  width: 100%;
-  margin-top: -20%;
-}
+.planetpictureearth{
+    width: 100%;
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-bottom: 0;
+  }
 
 .planetpicture {
   width: 70%;
@@ -290,6 +307,20 @@ h2 {
   margin-left: 5%;
 }
 
+#button-quiz {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 85%;
+  background-color: #9591F2;
+  color: #fff;
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
 #button:hover {
   opacity: 100%;
 }
@@ -356,7 +387,7 @@ a:hover {
 }
 
 /* the scroll to right function */
-.Mobilepage {
+.mobilepage {
   background: #2C3F59;
   size: auto;
 }
@@ -378,6 +409,7 @@ body {
   background: #111;
 }
 
+
 .horizontal-scroll-wrapper {
   position:relative;
   display:block;
@@ -387,7 +419,8 @@ body {
   overflow-y:auto;
   overflow-x:hidden;
   transform:rotate(-90deg) translateY(20%) translateX(30%);
-  margin-top:40px;
+  margin-top:100%;
+
 }
 
 .rectangles {
@@ -404,6 +437,7 @@ body {
   border-style: solid;
   border-color: #ffffff;
   transform: rotate(90deg) translateY(135%);
+ 
 }
 
 .information-list {
@@ -421,37 +455,39 @@ body {
   margin-bottom: 0;
 }
 
+
 @media screen and (min-width: 768px) {
   .logo {
-    width: 15%;
+    width: 19%;
   }
 
   .home-title {
+    text-align:left;
     font-size: 50px;
     margin-right: 50%;
-    margin-top: 0;
+    margin-top: -5%;
     margin-left: 13%;
     padding: 1%;
-    padding-top: -10%;
+    z-index:10;
     padding-bottom: 5%;
   }
 
   .universe-background {
-    transform: rotate(180deg);
     position: absolute;
-    width: auto;
-    top: -15%;
-    z-index: 0;
+    top: -5%;
     left: -10%;
+    margin-top: 40%;
+    width:100%;
     margin-bottom: 0;
+    z-index:-1;
   }
 
   .little-prince {
-    width: 65%;
+    width: 60%;
     margin-top: -65%;
     z-index: 1;
     position: absolute;
-    right: -5%;
+    right: -8%;
     margin-bottom: 0;
   }
 
@@ -459,7 +495,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     padding: 33%;
-    padding-top: 3%;
+    padding-top: 8%;
     padding-bottom: 0;
     position: relative;
     left: -20%;
@@ -478,22 +514,46 @@ body {
 
   .solar-system-title {
     margin-top: 40%;
-    font-size: 50px;
+    font-size: 40px;
   }
   
-  .solar-system2 {
+  .solar-system{
+    display:none;
+  }
+  
+  .solarsystem2 {
   visibility: visible;
   width: 160%;
-  margin-left: -53%;
-    margin-top: 0;
-    padding-top: 0;
+  margin-left: -70%;
+  padding-top: 0;
+  z-index:-1;
+  position: absolute;
+  }
+  
+  
+   .planetpicture {
+   width: 60%;
+   margin-left:2%;
+  }
+  
+  .planetpictureearth{
+    width: 80%;
+    padding-left: 10%;
+  }
+  .planettitle{
+  margin-top:35%;
   }
   
   .number {
     visibility: hidden;
   }
   
+  .planettitle-earth{
+    margin-top:-70%;
+  }
+  
   .earth1 {
+    padding-top:10%;
     left: 27%;
     top: 30%;
   }
@@ -517,12 +577,12 @@ body {
   
   .jupiter1 {
     left: 50%;
-    top: -5%;
+    top: -6%;
   }
   
   .jupiter2 {
     margin-left: 50%;
-    margin-top: -5%;
+    margin-top: -7%;
     padding-right: 7%;
   }
   
@@ -533,7 +593,7 @@ body {
   
   .saturn2 {
     margin-left: 60%;
-    margin-top: -5%;
+    margin-top: -7%;
     padding-right: 2%;
   }
   
@@ -545,16 +605,14 @@ body {
     display: none;
   }
 
-  .solar-system {
-    display: none;
-  }
 
+   
   .sidenav {
     height: 100%;
     width: auto;
     position: absolute;
     z-index: 1;
-    top: 135%;
+    top: 110%;
     left: 10%;
     background-color: transparent;
     overflow-x: visible;
@@ -564,13 +622,14 @@ body {
   }
 
   .earth {
-    margin-top: 0;
+    margin-top: -100%;
   }
   
-  .planetpicture {
-    margin-left: -15%;
-    width: 40%;
+  .planetpicture{  
+  padding-top: 5%;
+  padding-left:auto;
   }
+  
   
   .button-scroll-right {
     visibility: hidden;
@@ -587,59 +646,113 @@ body {
   .unlock {
     margin-top: -5%;
   }
+  
+  .one{
+    display:none;
+  }
+
+ .horizontal-scroll-wrapper {
+  margin-top:60%;
+  transform:none;
+  width:100%;
+  border-style:none;
+  overflow-y:hidden;
+  overflow-x:hidden; 
+  
 }
 
-@media screen and (min-width: 1200px) {
+  .rectangles {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
 
+
+.rectangles > div {
+  display: block;
+  width: 600px;
+  height:150px;
+  border-style: none;
+  border-color: #ffffff;
+  transform: none;
+  margin:0;
+  margin-left: -10%;
+}
+  
+.information-list {
+  display:block;
+  padding-left:25%;
+  padding-right:auto;
+}
+
+#button-quiz {
+  margin-top: 30%;
+}
+  
+#thefox {
+  width: 45%;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .logo {
+    width: 10%;
+  }
+  
   .home-title {
     font-size: 70px;
-    margin-top: 5%;
+    margin-top: 0;
     margin-left: 5%;
     padding-right: 14%;
+    padding-top: 15%;
   }
 
   .universe-background {
-    width: 100%;
-    top: -20%;
-    left: -5%;
+    width: 90%;
+    top: 0;
+    left: 0;
   }
 
   .little-prince {
-    width: 55%;
-    margin-top: -65%;
-    left: -8%;
+    width: 45%;
+    margin-top: -75%;
+    left: 0;
   }
 
   .introduction {
-    font-size: 20px;
-    padding-top: 0%;
-    left: 30%;
-    margin-top: -35%;
+    font-size: 17px;
+    padding-top: 10%;
+    left: 25%;
+    margin-top: -55%;
   }
 
   .introduction-2 {
-    font-size: 20px;
-    left: 30%;
+    font-size: 17px;
+    left: 25%;
     padding-left: 33%;
   }
 
   .solar-system-title {
-    margin-top: 70%;
+    margin-top: 90%;
     font-size: 50px;
   }
   
-  .solar-system2 {
-  margin-left: -45%;
+  .solarsystem2 {
+  width:200%;
+  margin-left: -80%;
+  padding-top: 40%;
   }
   
   .earth1 {
+    padding-top:5%;
     left: 35%;
-    top: 140%;
+    top: 100%;
     font-size: 30px;
   }
   
   .earth2 {
-    margin-top: 75%;
+    margin-top: 73%;
     margin-left: 35%;
     padding-right: 20%;
     font-size: 15px;
@@ -648,6 +761,7 @@ body {
   .mars1 {
     left: 42%;
     font-size: 30px;
+    margin-top: 10%;
   }
   
   .mars2 {
@@ -659,13 +773,13 @@ body {
   
   .jupiter1 {
     left: 58%;
-    top: -5%;
+    top: -9%;
     font-size: 30px;
   }
   
   .jupiter2 {
     margin-left: 58%;
-    margin-top: -3%;
+    margin-top: -5%;
     padding-right: 7%;
     font-size: 15px;
   }
@@ -681,6 +795,29 @@ body {
     margin-top: -3%;
     padding-right: 2%;
     font-size: 15px;
+  }
+  
+   .planettitle-earth{
+    margin-top:-60%;
+  }
+  
+  .planettitle{
+    margin-top: 35%;
+  }
+
+  .planetpicture {
+  width: 40%;
+  padding-left: 30%;
+  padding-right:auto;
+  
+  }
+  
+  .planetpictureearth{
+    width: 50%;
+    padding-top: 0%;
+    padding-left: 25%;
+    padding-right:auto;
+    padding-bottom: 10%;
   }
 
   .quiz-title {
@@ -706,6 +843,47 @@ body {
   font-size: 20px;
 }
   
+  .horizontal-scroll-wrapper {
+  margin-top:60%;
+  transform:none;
+  width:100%;
+  border-style:none;
+  overflow-y:hidden;
+  overflow-x:hidden; 
+  
+}
+
+  .rectangles {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+.rectangles > div {
+  display: block;
+  width: 120%;
+  height:150px;
+  border-style: none;
+  border-color: #ffffff;
+  transform: none;
+  margin:0;
+  margin-left: -10%;
+}
+  
+.information-list {
+  display:block;
+  padding-left:30%;
+  padding-right:auto;
+}
+
+  
+  
   .foxpagetext{
     font-size: 60px;
   }
+  #thefox {
+  width: 32%;
+}
+  

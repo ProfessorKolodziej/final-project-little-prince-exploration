@@ -1,8 +1,7 @@
 /* CSS files add styling rules to your content */
 
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 body {
   background: #2C3F59;
@@ -10,19 +9,16 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  
-.solarsystem2 {
-    display:none;
+  .solarsystem2 {
+    display: none;
   }
 }
-  
 
 .logo {
   top: 0;
   left: 0;
   width: 22%;
 }
-
 
 .home-title {
   font-family: "Nerko One", cursive;
@@ -31,14 +27,13 @@ body {
   padding: 20%;
   padding-top: 0;
   padding-bottom: 5%;
-  z-index:1;
+  z-index: 1;
   color: #ffefb4;
-  
 }
 
 .introduction {
   font-family: "Quicksand", sans-serif;
-  text-align:left;
+  text-align: left;
   font-weight: 700;
   color: white;
   font-size: 14px;
@@ -50,7 +45,7 @@ body {
 
 .introduction-2 {
   font-family: "Quicksand", sans-serif;
-  text-align:left;
+  text-align: left;
   font-weight: 700;
   color: white;
   font-size: 14px;
@@ -66,7 +61,7 @@ body {
   top: 50%;
   z-index: -1;
   left: -30%;
-  size:10%;
+  size: 10%;
 }
 
 .little-prince {
@@ -162,16 +157,16 @@ h2 {
 .solar-system {
   width: 120%;
   margin-top: 100%;
-  margin-left:-10%;
+  margin-left: -10%;
 }
 
-  .solar-system-title {
-    font-family: "Nerko One", cursive;
-    font-size: 35px;
-    margin-bottom: 150%;
-    color: #ffefb4;
-    margin-top: -130%;
-  }
+.solar-system-title {
+  font-family: "Nerko One", cursive;
+  font-size: 35px;
+  margin-bottom: 150%;
+  color: #ffefb4;
+  margin-top: -130%;
+}
 
 .planettitle {
   display: block;
@@ -180,10 +175,9 @@ h2 {
   padding-top: 0;
 }
 
-.planettitle-earth{
-    margin-top:-20%;
-  }
-
+.planettitle-earth {
+  margin-top: -20%;
+}
 
 .Description {
   font-family: "Quicksand", sans-serif;
@@ -194,12 +188,12 @@ h2 {
   font-size: 12px;
 }
 
-.planetpictureearth{
-    width: 100%;
-    padding-top: 0%;
-    padding-left: 5%;
-    padding-bottom: 0;
-  }
+.planetpictureearth {
+  width: 100%;
+  padding-top: 0%;
+  padding-left: 5%;
+  padding-bottom: 0;
+}
 
 .planetpicture {
   width: 70%;
@@ -409,23 +403,21 @@ body {
   background: #111;
 }
 
-
 .horizontal-scroll-wrapper {
-  position:relative;
-  display:block;
+  position: relative;
+  display: block;
   top: 0;
-  width:300px;
-  max-height:450px;
-  overflow-y:auto;
-  overflow-x:hidden;
-  transform:rotate(-90deg) translateY(20%) translateX(30%);
-  margin-top:100%;
-
+  width: 300px;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(20%) translateX(30%);
+  margin-top: 100%;
 }
 
 .rectangles {
-  margin-top:85%;
-  margin-bottom:-30%;
+  margin-top: 85%;
+  margin-bottom: -30%;
   padding: 0px 50px 10px;
 }
 
@@ -437,7 +429,6 @@ body {
   border-style: solid;
   border-color: #ffffff;
   transform: rotate(90deg) translateY(135%);
- 
 }
 
 .information-list {
@@ -455,20 +446,19 @@ body {
   margin-bottom: 0;
 }
 
-
 @media screen and (min-width: 768px) {
   .logo {
     width: 19%;
   }
 
   .home-title {
-    text-align:left;
+    text-align: left;
     font-size: 50px;
     margin-right: 50%;
     margin-top: -5%;
     margin-left: 13%;
     padding: 1%;
-    z-index:10;
+    z-index: 10;
     padding-bottom: 5%;
   }
 
@@ -477,9 +467,9 @@ body {
     top: -5%;
     left: -10%;
     margin-top: 40%;
-    width:100%;
+    width: 100%;
     margin-bottom: 0;
-    z-index:-1;
+    z-index: -1;
   }
 
   .little-prince {
@@ -516,48 +506,47 @@ body {
     margin-top: 40%;
     font-size: 40px;
   }
-  
-  .solar-system{
-    display:none;
+
+  .solar-system {
+    display: none;
   }
-  
+
   .solarsystem2 {
-  visibility: visible;
-  width: 160%;
-  margin-left: -70%;
-  padding-top: 0;
-  z-index:-1;
-  position: absolute;
+    visibility: visible;
+    width: 160%;
+    margin-left: -70%;
+    padding-top: 0;
+    z-index: -1;
+    position: absolute;
   }
-  
-  
-   .planetpicture {
-   width: 60%;
-   margin-left:2%;
+
+  .planetpicture {
+    width: 60%;
+    margin-left: 2%;
   }
-  
-  .planetpictureearth{
+
+  .planetpictureearth {
     width: 80%;
     padding-left: 10%;
   }
-  .planettitle{
-  margin-top:35%;
+  .planettitle {
+    margin-top: 35%;
   }
-  
+
   .number {
     visibility: hidden;
   }
-  
-  .planettitle-earth{
-    margin-top:-70%;
+
+  .planettitle-earth {
+    margin-top: -70%;
   }
-  
+
   .earth1 {
-    padding-top:10%;
+    padding-top: 10%;
     left: 27%;
     top: 30%;
   }
-  
+
   .earth2 {
     margin-top: 30%;
     margin-left: 27%;
@@ -568,35 +557,35 @@ body {
     left: 40%;
     top: -5%;
   }
-  
+
   .mars2 {
     margin-left: 40%;
     margin-top: -6%;
     padding-right: 16%;
   }
-  
+
   .jupiter1 {
     left: 50%;
     top: -6%;
   }
-  
+
   .jupiter2 {
     margin-left: 50%;
     margin-top: -7%;
     padding-right: 7%;
   }
-  
+
   .saturn1 {
     left: 60%;
     top: -5%;
   }
-  
+
   .saturn2 {
     margin-left: 60%;
     margin-top: -7%;
     padding-right: 2%;
   }
-  
+
   .openbtn {
     display: none;
   }
@@ -605,8 +594,6 @@ body {
     display: none;
   }
 
-
-   
   .sidenav {
     height: 100%;
     width: auto;
@@ -624,82 +611,79 @@ body {
   .earth {
     margin-top: -100%;
   }
-  
-  .planetpicture{  
-  padding-top: 5%;
-  padding-left:auto;
+
+  .planetpicture {
+    padding-top: 5%;
+    padding-left: auto;
   }
-  
-  
+
   .button-scroll-right {
     visibility: hidden;
   }
-  
+
   .button-scroll-right-earth {
     visibility: hidden;
   }
-  
+
   #continue {
     margin-top: 3%;
   }
-  
+
   .unlock {
     margin-top: -5%;
   }
-  
-  .one{
-    display:none;
+
+  .one {
+    display: none;
   }
 
- .horizontal-scroll-wrapper {
-  margin-top:60%;
-  transform:none;
-  width:100%;
-  border-style:none;
-  overflow-y:hidden;
-  overflow-x:hidden; 
-  
-}
+  .horizontal-scroll-wrapper {
+    margin-top: 60%;
+    transform: none;
+    width: 100%;
+    border-style: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 
   .rectangles {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
 
+  .rectangles > div {
+    display: block;
+    width: 600px;
+    height: 150px;
+    border-style: none;
+    border-color: #ffffff;
+    transform: none;
+    margin: 0;
+    margin-left: -10%;
+  }
 
-.rectangles > div {
-  display: block;
-  width: 600px;
-  height:150px;
-  border-style: none;
-  border-color: #ffffff;
-  transform: none;
-  margin:0;
-  margin-left: -10%;
-}
-  
-.information-list {
-  display:block;
-  padding-left:25%;
-  padding-right:auto;
-}
+  .information-list {
+    display: block;
+    padding-left: 25%;
+    padding-right: auto;
+  }
 
-#button-quiz {
-  margin-top: 30%;
-}
-  
-#thefox {
-  width: 45%;
+  #button-quiz {
+    margin-top: 30%;
+  }
+
+  #thefox {
+    width: 45%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-
   .logo {
     width: 10%;
   }
-  
+
   .home-title {
     font-size: 70px;
     margin-top: 0;
@@ -737,20 +721,20 @@ body {
     margin-top: 90%;
     font-size: 50px;
   }
-  
+
   .solarsystem2 {
-  width:200%;
-  margin-left: -80%;
-  padding-top: 40%;
+    width: 200%;
+    margin-left: -80%;
+    padding-top: 40%;
   }
-  
+
   .earth1 {
-    padding-top:5%;
+    padding-top: 10%;
     left: 35%;
-    top: 100%;
+    top: 110%;
     font-size: 30px;
   }
-  
+
   .earth2 {
     margin-top: 73%;
     margin-left: 35%;
@@ -763,60 +747,59 @@ body {
     font-size: 30px;
     margin-top: 10%;
   }
-  
+
   .mars2 {
     margin-left: 42%;
     margin-top: -4%;
     padding-right: 10%;
     font-size: 15px;
   }
-  
+
   .jupiter1 {
     left: 58%;
     top: -9%;
     font-size: 30px;
   }
-  
+
   .jupiter2 {
     margin-left: 58%;
     margin-top: -5%;
     padding-right: 7%;
     font-size: 15px;
   }
-  
+
   .saturn1 {
     left: 68%;
     top: -5%;
     font-size: 30px;
   }
-  
+
   .saturn2 {
     margin-left: 68%;
     margin-top: -3%;
     padding-right: 2%;
     font-size: 15px;
   }
-  
-   .planettitle-earth{
-    margin-top:-60%;
+
+  .planettitle-earth {
+    margin-top: -60%;
   }
-  
-  .planettitle{
+
+  .planettitle {
     margin-top: 35%;
   }
 
   .planetpicture {
-  width: 40%;
-  padding-left: 30%;
-  padding-right:auto;
-  
+    width: 40%;
+    padding-left: 30%;
+    padding-right: auto;
   }
-  
-  .planetpictureearth{
+
+  .planetpictureearth {
     width: 50%;
     padding-top: 0%;
     padding-left: 25%;
-    padding-right:auto;
+    padding-right: auto;
     padding-bottom: 10%;
   }
 
@@ -831,59 +814,55 @@ body {
     padding-right: 20%;
     padding-left: 20%;
   }
-  
-  .question {
-  font-size: 20px;
-  margin-top: 5%;
-  margin-left: 5%;
-}
 
-.answers {
-  margin-top: 3%;
-  font-size: 20px;
-}
-  
+  .question {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .answers {
+    margin-top: 3%;
+    font-size: 20px;
+  }
+
   .horizontal-scroll-wrapper {
-  margin-top:60%;
-  transform:none;
-  width:100%;
-  border-style:none;
-  overflow-y:hidden;
-  overflow-x:hidden; 
-  
-}
+    margin-top: 60%;
+    transform: none;
+    width: 100%;
+    border-style: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 
   .rectangles {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
 
+  .rectangles > div {
+    display: block;
+    width: 120%;
+    height: 150px;
+    border-style: none;
+    border-color: #ffffff;
+    transform: none;
+    margin: 0;
+    margin-left: -10%;
+  }
 
-.rectangles > div {
-  display: block;
-  width: 120%;
-  height:150px;
-  border-style: none;
-  border-color: #ffffff;
-  transform: none;
-  margin:0;
-  margin-left: -10%;
-}
-  
-.information-list {
-  display:block;
-  padding-left:30%;
-  padding-right:auto;
-}
+  .information-list {
+    display: block;
+    padding-left: 30%;
+    padding-right: auto;
+  }
 
-  
-  
-  .foxpagetext{
+  .foxpagetext {
     font-size: 60px;
   }
   #thefox {
-  width: 32%;
+    width: 32%;
+  }
 }
-  

@@ -1,4 +1,4 @@
-/*
+/* eslint-disable */
 // Button go back top
 const mybutton = document.getElementById('myBtn');
 
@@ -38,50 +38,50 @@ const myQuestions = [
   {
     question: '1. How many moons does Mars have?',
     answers: {
-      a: '2' + '\r\n',
-      b: '1' + '\r\n',
-      c: '50' + '\r\n',
-      d: '13' + '\r\n',
+      a: '2\r\n',
+      b: '1\r\n',
+      c: '50\r\n',
+      d: '13\r\n',
     },
     correctAnswer: 'a',
   },
   {
     question: ' 2. What percentage of the earth surface is covered with water?',
     answers: {
-      a: '50%' + '\r\n',
-      b: '60%' + '\r\n',
-      c: '70%' + '\r\n',
-      d: '80%' + '\r\n',
+      a: '50%\r\n',
+      b: '60%\r\n',
+      c: '70%\r\n',
+      d: '80%\r\n',
     },
     correctAnswer: 'c',
   },
   {
     question: '3. What is the largest planet in the solar system?',
     answers: {
-      a: 'Mars' + '\r\n',
-      b: 'Venus' + '\r\n',
-      c: 'Jupiter' + '\r\n',
-      d: 'Saturn' + '\r\n',
+      a: 'Mars\r\n',
+      b: 'Venus\r\n',
+      c: 'Jupiter\r\n',
+      d: 'Saturn\r\n',
     },
     correctAnswer: 'c',
   },
   {
     question: '4. What is the closest planet to sun?',
     answers: {
-      a: 'Mars' + '\r\n',
-      b: 'Venus' + '\r\n',
-      c: 'Earth' + '\r\n',
-      d: 'Mercury' + '\r\n',
+      a: 'Mars\r\n',
+      b: 'Venus\r\n',
+      c: 'Earth\r\n',
+      d: 'Mercury\r\n',
     },
     correctAnswer: 'd',
   },
   {
     question: '5. What planet has the clearest ring on it?',
     answers: {
-      a: 'Neptune' + '\r\n',
-      b: 'Uranus' + '\r\n',
-      c: 'Jupiter' + '\r\n',
-      d: 'Saturn' + '\r\n',
+      a: 'Neptune\r\n',
+      b: 'Uranus\r\n',
+      c: 'Jupiter\r\n',
+      d: 'Saturn\r\n',
     },
     correctAnswer: 'b',
   },
@@ -105,7 +105,7 @@ function generateQuiz(
     let answers;
 
     // for each question...
-    for (let i = 0; i < questions.length; i++) {
+    for (let i = 0; i < questions.length; i += 1) {
       // first reset the list of answers
       answers = [];
 
@@ -150,7 +150,7 @@ function generateQuiz(
     let numCorrect = 0;
 
     // for each question...
-    for (let i = 0; i < questions.length; i++) {
+    for (let i = 0; i < questions.length; i += 1) {
       // find selected answer
       userAnswer = (
         answerContainers[i].querySelector(
@@ -161,13 +161,12 @@ function generateQuiz(
       // if answer is correct
       if (userAnswer === questions[i].correctAnswer) {
         // add to the number of correct answers
-        numCorrect++;
+        numCorrect += 1;
 
         // color the answers green
         answerContainers[i].style.color = 'lightgreen';
-      }
       // if answer is wrong or blank
-      else {
+      } else {
         // color the answers red
         answerContainers[i].style.color = 'lightgrey';
       }
@@ -177,7 +176,7 @@ function generateQuiz(
     resultsContainer.innerHTML = `${numCorrect} out of ${questions.length}`;
 
     // redirect if all correct& show up a "try again" if not getting it correct
-    if (numCorrect == 5) {
+    if (numCorrect === 5) {
       window.location.href = 'UnlockTheFox.html';
     } else {
       document
@@ -197,4 +196,3 @@ function generateQuiz(
     showResults(questions, quizContainer, resultsContainer);
   };
 }
-*/

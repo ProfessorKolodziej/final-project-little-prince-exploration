@@ -1,4 +1,3 @@
-/* eslint-disable */
 // Button go back top
 const mybutton = document.getElementById('myBtn');
 
@@ -91,12 +90,10 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('button');
 
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
-
 function generateQuiz(
   questions,
-  quizContainer,
-  resultsContainer,
+  quizcontainer,
+  resultscontainer,
   submitButton,
 ) {
   function showQuestions(questions, quizContainer) {
@@ -110,6 +107,8 @@ function generateQuiz(
       answers = [];
 
       // for each available answer...
+      /* global letter */
+      /* eslint no-undef: "error" */
       for (letter in questions[i].answers) {
         // ...add an html radio button
         answers.push(
@@ -136,12 +135,11 @@ function generateQuiz(
           }</div>`,
       );
     }
-
     // finally combine our output list into one string of html and put it on the page
     quizContainer.innerHTML = output.join('');
   }
 
-  function showResults(questions, quizContainer, resultsContainer) {
+  function showResults(Questions, quizContainer, resultsContainer) {
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
@@ -196,3 +194,4 @@ function generateQuiz(
     showResults(questions, quizContainer, resultsContainer);
   };
 }
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);

@@ -135,7 +135,7 @@ body {
 	font-size: 30px;
 	cursor: pointer;
 	background-color: #9591f2;
-	opacity: 85%;
+	opacity: 0.85;
 	border-radius: 5px;
 	color: white;
 	margin-top: 76%;
@@ -143,7 +143,7 @@ body {
 }
 
 .openbtn:hover {
-	opacity: 100%;
+	opacity: 1;
 }
 
 h2 {
@@ -231,7 +231,7 @@ h2 {
 	border: none;
 	outline: none;
 	background-color: #ffe99f;
-	opacity: 60%;
+	opacity: 0.6;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -240,7 +240,7 @@ h2 {
 }
 
 #myBtn:hover {
-	opacity: 100%;
+	opacity: 1;
 }
 
 .quizpage {
@@ -288,7 +288,7 @@ h2 {
 	font-family: "Quicksand", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
-	opacity: 85%;
+	opacity: 0.85;
 	background-color: #9591f2;
 	color: #fff;
 	border: 1px;
@@ -304,7 +304,7 @@ h2 {
 	font-family: "Quicksand", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
-	opacity: 85%;
+	opacity: 0.85;
 	background-color: #9591f2;
 	color: #fff;
 	border: 1px;
@@ -315,7 +315,7 @@ h2 {
 }
 
 #button:hover {
-	opacity: 100%;
+	opacity: 1;
 }
 
 #results {

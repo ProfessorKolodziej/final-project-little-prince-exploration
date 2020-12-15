@@ -11,26 +11,37 @@ function scrollFunction() {
   }
 }
 
-window.addEventListener('scroll', scrollFunction);
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-document.getElementById('myBtn').addEventListener('click', topFunction);
+if (mybutton) {
+  mybutton.addEventListener('click', topFunction);
+  window.addEventListener('scroll', scrollFunction);
+}
 
 // Open Close nav
 function openNav() {
   document.getElementById('mySidenav').style.width = '250px';
 }
-document.getElementById('openNav').addEventListener('click', openNav);
+
+const navButton = document.getElementById('openNav');
+
+if (navButton) {
+  navButton.addEventListener('click', openNav);
+}
+
+const closeButton = document.getElementById('closeNav');
 
 function closeNav() {
   document.getElementById('mySidenav').style.width = '0';
 }
-document.getElementById('closeNav').addEventListener('click', closeNav);
+
+if (closeButton) {
+  closeButton.addEventListener('click', closeNav);
+}
 
 // for the quiz
 const myQuestions = [
@@ -90,108 +101,113 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('button');
 
-function generateQuiz(
-  questions,
-  quizcontainer,
-  resultscontainer,
-  submitButton,
-) {
-  function showQuestions(questions, quizContainer) {
-    // we'll need a place to store the output and the answer choices
-    const output = [];
-    let answers;
+/* eslint no-param-reassign: ["error", { "props": false }] */
+function showQuestions(questions, quiz) {
+  console.log(quiz);
+  // we'll need a place to store the output and the answer choices
+  const output = [];
+  let answers;
 
-    // for each question...
-    for (let i = 0; i < questions.length; i += 1) {
-      // first reset the list of answers
-      answers = [];
+  // for each question...
+  for (let i = 0; i < questions.length; i += 1) {
+    // first reset the list of answers
+    answers = [];
 
-      // for each available answer...
-      /* global letter */
-      /* eslint no-undef: "error" */
-      for (letter in questions[i].answers) {
-        // ...add an html radio button
-        answers.push(
-          `${'<label>'
-            + '<input type="radio" name="question'}${
-            i
-          }" value="${
-            letter
-          }">${
-            letter
-          }: ${
-            questions[i].answers[letter]
-          }</label>`,
-        );
-      }
-
-      // add this question and its answers to the output
-      output.push(
-        `<div class="question">${
-          questions[i].question
-        }</div>`
-          + `<div class="answers">${
-            answers.join('')
-          }</div>`,
+    // for each available answer...
+    /* global letter */
+    /* eslint no-undef: "error" */
+    for (letter in questions[i].answers) { // eslint-disable-line
+      // ...add an html radio button
+      answers.push(
+        `${'<label>'
+          + '<input type="radio" name="question'}${
+          i
+        }" value="${
+          letter
+        }">${
+          letter
+        }: ${
+          questions[i].answers[letter]
+        }</label>`,
       );
     }
-    // finally combine our output list into one string of html and put it on the page
-    quizContainer.innerHTML = output.join('');
+
+    // add this question and its answers to the output
+    output.push(
+      `<div class="question">${
+        questions[i].question
+      }</div>`
+        + `<div class="answers">${
+          answers.join('')
+        }</div>`,
+    );
   }
+  // finally combine our output list into one string of html and put it on the page
+  quiz.innerHTML = output.join('');
+}
 
-  function showResults(Questions, quizContainer, resultsContainer) {
-    // gather answer containers from our quiz
-    const answerContainers = quizContainer.querySelectorAll('.answers');
+function showResults(questions, quiz, results) {
+  // gather answer containers from our quiz
+  const answerContainers = quiz.querySelectorAll('.answers');
 
-    // keep track of user's answers
-    let userAnswer = '';
-    let numCorrect = 0;
+  // keep track of user's answers
+  let userAnswer = '';
+  let numCorrect = 0;
 
-    // for each question...
-    for (let i = 0; i < questions.length; i += 1) {
-      // find selected answer
-      userAnswer = (
-        answerContainers[i].querySelector(
-          `input[name=question${i}]:checked`,
-        ) || {}
-      ).value;
+  // for each question...
+  for (let i = 0; i < questions.length; i += 1) {
+    // find selected answer
+    userAnswer = (
+      answerContainers[i].querySelector(
+        `input[name=question${i}]:checked`,
+      ) || {}
+    ).value;
 
-      // if answer is correct
-      if (userAnswer === questions[i].correctAnswer) {
-        // add to the number of correct answers
-        numCorrect += 1;
+    // if answer is correct
+    if (userAnswer === questions[i].correctAnswer) {
+      // add to the number of correct answers
+      numCorrect += 1;
 
-        // color the answers green
-        answerContainers[i].style.color = 'lightgreen';
-      // if answer is wrong or blank
-      } else {
-        // color the answers red
-        answerContainers[i].style.color = 'lightgrey';
-      }
-    }
-
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${questions.length}`;
-
-    // redirect if all correct& show up a "try again" if not getting it correct
-    if (numCorrect === 5) {
-      window.location.href = 'UnlockTheFox.html';
+      // color the answers green
+      answerContainers[i].style.color = 'lightgreen';
+    // if answer is wrong or blank
     } else {
-      document
-        .getElementById('continue')
-        .addEventListener('click', (event) => {
-          alert('Try again to unlock the fox!');
-          event.preventDefault();
-        });
+      // color the answers red
+      answerContainers[i].style.color = 'lightgrey';
     }
   }
 
+  // show number of correct answers out of total
+  results.innerHTML = `${numCorrect} out of ${questions.length}`;
+
+  // redirect if all correct& show up a "try again" if not getting it correct
+  if (numCorrect === 5) {
+    window.location.href = 'UnlockTheFox.html';
+  } else {
+    document
+      .getElementById('continue')
+      .addEventListener('click', (event) => {
+        alert('Try again to unlock the fox!');
+        event.preventDefault();
+      });
+  }
+}
+
+function generateQuiz(
+  questions,
+  quiz,
+  results,
+  submit,
+) {
   // show questions right away
-  showQuestions(questions, quizContainer);
+  showQuestions(questions, quiz);
 
   // on submit, show results
-  submitButton.onclick = function () {
-    showResults(questions, quizContainer, resultsContainer);
+  submit.onclick = function () {
+    showResults(questions, quiz, results);
   };
 }
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+if (quizContainer) {
+  generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+}

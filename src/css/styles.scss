@@ -540,7 +540,7 @@ div {
 	}
 
 	.earth1 {
-		padding-top: 10%;
+		padding-top: 0;
 		left: 27%;
 		top: 30%;
 	}
@@ -669,6 +669,7 @@ div {
 
 	#thefox {
 		width: 45%;
+		margin-top: 20%;
 	}
 }
 
@@ -722,14 +723,14 @@ div {
 	}
 
 	.earth1 {
-		padding-top: 10%;
+		padding-top: 20%;
 		left: 35%;
 		top: 110%;
 		font-size: 30px;
 	}
 
 	.earth2 {
-		margin-top: 73%;
+		margin-top: 60%;
 		margin-left: 35%;
 		padding-right: 20%;
 		font-size: 15px;
@@ -750,32 +751,32 @@ div {
 
 	.jupiter1 {
 		left: 58%;
-		top: -9%;
+		top: -3%;
 		font-size: 30px;
 	}
 
 	.jupiter2 {
 		margin-left: 58%;
-		margin-top: -5%;
+		margin-top: 0;
 		padding-right: 7%;
 		font-size: 15px;
 	}
 
 	.saturn1 {
 		left: 68%;
-		top: -5%;
+		top: 0;
 		font-size: 30px;
 	}
 
 	.saturn2 {
 		margin-left: 68%;
-		margin-top: -3%;
-		padding-right: 2%;
+		margin-top: 0;
+		padding-right: 1%;
 		font-size: 15px;
 	}
 
 	.planettitle-earth {
-		margin-top: -60%;
+		margin-top: -45%;
 	}
 
 	.planettitle {
@@ -857,6 +858,6 @@ div {
 	}
 
 	#thefox {
-		width: 32%;
+		width: 25%;
 	}
 }
